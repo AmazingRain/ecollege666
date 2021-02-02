@@ -1,0 +1,21 @@
+<view class="search">
+  <input type="text" placeholder="请输入用户昵称" bind:input="getSearchCon" value="{{nickName}}"/>
+</view>
+<block wx:for="{{searchResult}}" wx:key="{{idnex}}">
+  <view class="item" bind:tap="jumpMessage" data-index="{{index}}">
+  <view class="userpic">
+    <image mode="widthFix" src="{{item.userPic}}" />
+  </view>
+  <view class="userNickname">{{item.nickName}}</view>
+  <block wx:if="{{!flag}}">
+    <view class="iconfont icontianjia" bind:tap="addFriends" data-id="{{item.id}}"></view>
+  </block>
+  <block wx:else>
+    <view class="image" style="width: 64rpx; height:64rpx;">
+      <image src="http://chuantu.xyz/t6/731/1588240556x1700468761.png" mode="widthFix" style="width:100%;"/>
+    </view>
+    
+  </block>
+
+</view>
+</block>

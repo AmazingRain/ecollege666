@@ -1,0 +1,29 @@
+page {
+  /* background-color: #11A9D8; */
+  color: #666666;
+}
+
+.header {
+  /* height: 130rpx; */
+  margin-left: 30rpx;
+  border-bottom: 3rpx solid #707070;
+  padding: 10rpx;
+  font-family: '黑体';
+  font-size: 46rpx;
+  color: #666666;
+  padding: 30rpx 20rpx 20rpx 20rpx;
+  margin-right: 20rpx;
+}
+.header .text {
+  padding-left: 30rpx;
+  border-left: 8rpx solid #03A8E6;
+}
+.main {
+  margin-right: 20rpx;
+  font-family: '黑体';
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  color: #666666;
+  font-size: 34rpx;
+  line-height: 40rpx;
+}

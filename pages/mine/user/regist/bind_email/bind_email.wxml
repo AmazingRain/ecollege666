@@ -1,0 +1,10 @@
+<view class="main">
+  <view class="item">
+    <view class="item_text">请输入你的邮箱地址</view>
+    <view class="input">
+      <input placeholder='请输入邮箱' bindinput="getEmail" value="{{email}}" type="email"></input>
+      <view class="iconfont iconclose_filled" bind:tap="clearValue"></view>
+    </view>
+  </view>
+  <view class="btn" bind:tap="sendEmailCode">下一步</view>
+</view>

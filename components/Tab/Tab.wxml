@@ -1,0 +1,9 @@
+<view class="tab">
+    <view class="tab_title">
+        <view wx:for="{{tab}}" wx:key="id" class="title_item {{item.isActive?'active1':''}}" bindtap="handleItemTap" data-index="{{index}}">
+        <text class="{{item.cla}}" style="font-size:45rpx; color:{{item.color}}" decode="{{true}}" >&nbsp;&nbsp;</text>{{item.name}}</view>
+    </view>
+    <view class="tab_content">
+        <slot></slot>
+    </view>
+</view>

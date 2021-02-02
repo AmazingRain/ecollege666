@@ -1,0 +1,97 @@
+<view class="contenet">
+  <!-- <block wx:for="{{goods}}" wx:key="id"> -->
+  <view class="nav">
+    <view class="nav-touxiang">
+      <view class="tou">
+        <image src="{{goods.userPic}}" style="width: 100%;" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="nav-ming">
+      <view class="ming">{{goods.userNickName || goods.username}}</view>
+      <view class="time">{{createTime}}</view>
+    </view>
+  </view>
+  <view class="xiangqing">
+    <view class="money">￥{{goods.price}}</view>
+    <view class="sort">{{cate.categoryName}}</view>
+    <view class="introduce">介绍：{{goods.content}}</view>
+  </view>
+  <view class="image">
+    <image src="{{goods.thumPic}}" mode="widthFix"></image>
+    <image src="{{goods.mainPic}}" mode="widthFix"></image>
+    <image src="{{goods.longPic}}" mode="widthFix"></image>
+  </view>
+  <view class="bottom">
+    <view class="liuyan">
+      <text class="iconfont iconliuyan-copy" decode="{{true}}" bindtap="changeType">
+        留言（{{goods.commentCount}}）
+      </text>
+    </view>
+    <view class="gouwu">
+      <text class="iconfont iconxiazai50" decode="{{true}}"></text>
+      联系商家
+    </view>
+  </view>
+  <!-- </block> -->
+  <view class="main">
+    <block wx:for="{{comments}}" wx:key="index">
+      <view class="item">
+        <view class="userPic">
+          <image src="{{fromIdImgs[index]}}" mode="widthFix"></image>
+        </view>
+        <view class="commentZone">
+          <view class="comment_header">
+            <view class="nickName">{{item.nickName}}</view>
+          </view>
+          <view class="comment_con">
+            <view class="content">
+              <view class="content">{{item.content}}</view>
+              <view class="footer">
+                <view class="time">{{item.createTime}}</view>
+                <view class="icon">
+                  <span class="iconfont .iconzan"></span>
+                  <span class="num">{{item.likeNum}}</span>
+                  <view bindtap="findCommentById" data-id="{{item.id}}">
+                    <span class="iconfont iconpinglun"></span>
+                    <span class="num">{{item.replyNum}}</span>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <block wx:for="{{replyList[index]}}" wx:for-item="replyListItem" wx:key="index2" wx:for-index="index2">
+              <!-- <view class="open" hidden="{{isOpen || index2 }}" bind:tap="isOpen" data-id="{{index}}">
+                <text>展开全部（{{replyList[index].length}}）{{replyListItem.id}}</text>
+                <text class="iconfont iconicon-test6"></text>
+              </view> -->
+              <view class="replyContent">
+                <view class="userPic">
+                  <image src="{{replyListItem.fromThumbImg}}" mode="widthFix"></image>
+                </view>
+                <view class="commentZone">
+                  <view class="comment_header">
+                    <view class="nickName">{{replyListItem.fromNickName}}</view>
+                  </view>
+                  <view class="comment_con">
+                    <view class="content">
+                      <view class="content">{{replyListItem.content}}</view>
+                      <span class="time">{{replyListItem.createTime}}</span>
+                      <span bindtap="findCommentReplyById" data-id="{{replyListItem.id}}" class="iconfont iconpinglun" style="margin-left: 80rpx;"></span>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <!-- <view class="close" hidden="{{!isOpen || !(index2== replyList[index].length -1) }}" bind:tap="isOpen" data-id="{{replyListItem.id}}">
+                <text>收起{{flagId}}</text>
+                <text class="iconfont iconicon-test6"></text>
+              </view> -->
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="send_wrap">
+    <input class="s-input" bindchange="getTopicCommentValue" value="{{commentValue}}" placeholder="{{tipStr}}"></input>
+    <button bind:tap="sendTopicComment" class="btn">发送{{commentValue}}</button>
+  </view>
+</view>

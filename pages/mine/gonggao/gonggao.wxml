@@ -1,0 +1,10 @@
+<!--pages/mine/gonggao/gonggao.wxml-->
+<!-- <text>pages/mine/gonggao/gonggao.wxml</text> -->
+<view class="header">
+  <view class="text">公告</view>
+</view>
+<view class="main">
+  <view class="item">
+    西安邮电大学非毕业年级学生本学期不开学。考试全部改为线上进行
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!-- pages/friends/newFriend/newFriend.wxml -->
+<view class="header">
+  <view class="header_title">新朋友</view>
+  <view class="iconfont iconfenlei"></view>
+</view>
+<view class="main">
+  <block wx:if="{{!news.length}}">
+    <view class="aaa">暂无好友请求信息</view>
+  </block>
+  <block wx:for="{{news}}" wx:key="index">
+    <view class="item">
+      <view class="userpic">
+        <image mode="widthFix" src="{{item.userPic}}" />
+      </view>
+      <view class="userNickname">{{item.nickName}}</view>
+      <view class="iconfont iconfenlei" bind:tap="agree" data-id="{{item.id}}" hidden="{{isShow}}"></view>
+      <view class="text" hidden="{{agreeFlag}}">已同意</view>
+      <view class="iconfont iconfenlei" bind:tap="refuse" data-id="{{item.id}}" hidden="{{isShow}}"></view>
+      <view class="text" hidden="{{refuseFlag}}">已拒绝</view>
+    </view>
+  </block>
+</view>

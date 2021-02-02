@@ -1,0 +1,14 @@
+<view class="item" bind:tap="help">
+    <view class="item_text">帮助与反馈</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="item" bind:tap="fuwu">
+    <view class="item_text">服务协议</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+
+<view class="paddingZone"></view>
+<view class="item zone" bind:tap="guanyu">
+    <view class="item_text">关于易校园</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>

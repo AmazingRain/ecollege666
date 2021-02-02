@@ -1,0 +1,35 @@
+<view class="content">
+    <view class="xinxi">
+        <view class="ming">
+            <view class="m-zi">名称</view>
+            <input class="m-input" value="{{inputVal}}"focus="{{inputShowed}}" bindchange="inputTyping1" placeholder="请输入商品名称"></input>
+        </view>
+        <view class="intro">
+            <view class="i-zi">描述</view>
+            <textarea cols="3" rows="15" class="i-text" value='{{concent}}'   bindblur="getContent"></textarea>
+        </view>
+        <view class="pic">
+            <view class="t-zi">照片</view>
+            <view class="tu">
+                <view class="choice" bindtap="selectImg"><image src="{{imgPath}}" bindtap="preImage" mode="scaleToFill"></image></view>
+                <view class="choice" bindtap="selectImg1"><image src="{{imgPath1}}" bindtap="preImage1" mode="scaleToFill"></image></view>
+                <view class="choice" bindtap="selectImg2"><image src="{{imgPath2}}" bindtap="preImage2" mode="scaleToFill"></image></view>
+            </view>
+        </view>
+    </view>
+    <view class="price">
+        <view class="xianjia">
+            <view class="xj-zi">价格</view>
+            <input class="xj-input" value="{{inputVal}}"focus="{{inputShowed}}" bindchange="inputTyping4" placeholder="请输入价格"></input>
+        </view>
+    </view>
+    <view class="pai">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="p-zi">分类 : {{array[index] || '衣服'}}</view>
+      </picker>
+    </view>
+    <view class="fabu" bind:tap="submit">
+        <button class="sub" style="width:250rpx;height:100rpx;background-color:#ee2;border-radius:20rpx;">提交
+        </button>      
+    </view>
+</view>

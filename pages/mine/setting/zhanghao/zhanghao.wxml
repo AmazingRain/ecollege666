@@ -1,0 +1,4 @@
+<view class="item" bind:tap="modifyPassword">
+    <view class="item_text">修改密码</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>

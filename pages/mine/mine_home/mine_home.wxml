@@ -1,0 +1,32 @@
+<view class="my-content">
+    <view class="my-top">
+        <image src="http://chuantu.xyz/t6/731/1588156307x1700468761.png" style="width:100%;" mode="widthFix" />
+    </view>
+
+    <view class="my-touxiang">
+        <view class="mt-tu" bind:tap="preview">
+            <image src="{{userInfo.userPic}}" mode="widthFix"/>
+        </view>
+        <view class="mt-name">{{userInfo.nickName || '游客'}}</view>
+        <view class="mt-xiangxi" bind:tap="userInfo">
+        <text class="iconfont iconicon-test6-copy" style="font-size:55rpx;color:#5a615c;"></text></view>
+    </view>
+    <view class="my-gongneng">
+        <view class="mg-renzheng l-item" bind:tap="renzheng">
+            <view class="mr-left"><text class="iconfont iconrenzheng" style="font-size:55rpx;color:#7090cc;"decode="{{true}}">&nbsp;&nbsp;</text>实名认证</view>
+            <view class="mr-right"><text class="iconfont iconicon-test6-copy" style="font-size:55rpx;color:#5a615c;"></text></view>
+        </view>
+        <view class="mg-setting l-item" bind:tap="setting">
+            <view class="mt-left"><text class="iconfont iconshezhi" style="font-size:55rpx;color:#f72b36;"decode="{{true}}">&nbsp;&nbsp;</text>设置</view>
+            <view class="mt-right"><text class="iconfont iconicon-test6-copy" style="font-size:55rpx;color:#5a615c;"></text></view>
+        </view>
+        <view class="mg-gengduo l-item" bind:tap="gengduo">
+            <view class="md-left"><text class="iconfont icongengduo2" style="font-size:55rpx;color:#57d87e;"decode="{{true}}">&nbsp;&nbsp;</text>更多</view>
+            <view class="md-right"><text class="iconfont iconicon-test6-copy" style="font-size:55rpx;color:#5a615c;"></text></view>
+        </view>
+        <view class="mg-gengduo l-item" bind:tap="gong">
+            <view class="md-left"><text class="iconfont icontongzhi" style="font-size:55rpx;color:#ee2;"decode="{{true}}">&nbsp;&nbsp;</text>公告</view>
+            <view class="md-right"><text class="iconfont iconicon-test6-copy" style="font-size:55rpx;color:#5a615c;"></text></view>
+        </view>
+    </view>
+</view>

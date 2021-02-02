@@ -1,0 +1,4 @@
+<!--pages/mine/user/forget_password/confimUpdate/confimUpdate.wxml-->
+<view class="text">
+</view>
+<view class="btn" bind:tap="backLogin">返回登录界面</view>

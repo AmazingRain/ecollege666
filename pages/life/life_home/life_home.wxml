@@ -1,0 +1,120 @@
+<Tab tab="{{tab}}" bind:itemChange="handleItemChange">
+    <block wx:if="{{tab[0].isActive}}">
+        <!-- <view class="iconfont icontianjia add" bind:tap="addGoods"></view> -->
+        <view class="market-tu">
+            <view class="tu">
+                <image src="http://chuantu.xyz/t6/731/1588165682x1700468761.png" style="width:240rpx;height:210rpx;"></image>
+            </view>
+            <view class="market-search">
+                <view class="ms-wiezhi">
+                    <text class="iconfont icondingwei-" style="font-size:45rpx;color:#98b7fa"></text>
+                    西安邮电大学-长安校区
+                </view>
+                <view>
+                    <input type="text" class="ms-search" placeholder="搜索商品" value="{{goodsName}}" bindinput="getSearchGoodsName" data-flag="{{1}}" confirm-type="search" />
+                </view>
+            </view>
+        </view>
+        <view class="market-choice">
+            <view class="mc-sort" bind:tap="sortMoney">
+                排序
+                <text class="iconfont iconpaixu1" style="font-size:35rpx;color:#a8a88d"></text>
+            </view>
+            <view class="mc-fenlei" bind:tap="refresh">
+                刷新
+                <text class="iconfont iconfenlei" style="font-size:35rpx;color:#a8a88d"></text>
+            </view>
+            <view class="mc-fenlei" bind:tap="addGoods">
+                发布商品
+                <text class="iconfont icontianjia" style="font-size:35rpx;color:#a8a88d"></text>
+            </view>
+        </view>
+        <view class="market-book">
+            <block>
+                <view class="mb-zheng" wx:for="{{userData}}" wx:key="id">
+                    <navigator class="mz-tu" url="../goods_detail/goode_detail?id={{item.id}}&userId={{item.userId}}&categoryId={{item.categoryId}}" style="background:url({{item.thumPic}}); background-size:280rpx 370rpx;">
+                        <view class="shu-xinxi">
+                            <view class="sx-money">￥：{{item.price}}</view>
+                            <view class="sx-ming">名称：{{item.goodsName}}</view>
+                        </view>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="trash-tu">
+            <view class="t-tu">
+                <image src="http://chuantu.xyz/t6/731/1588165750x2890212128.png" style="width:220rpx;height:220rpx;" />
+            </view>
+            <view class="t-search">
+                <view class="ts-wiezhi">
+                    <text class="iconfont icondingwei-" style="font-size:45rpx;color:#aa3"></text>
+                    西安邮电大学-长安校区
+                </view>
+                <view>
+                    <input type="text" class="ts-search" placeholder="搜索垃圾" value="{{refuseName}}" bindinput="getRefuseName" />
+                </view>
+            </view>
+        </view>
+        <view class="trash-fenbu">
+            <text class="iconfont icondingwei" style="font-size:35rpx;color:#cf67b0"></text>
+            垃圾分类细节
+        </view>
+        <view class="trash-xijie" hidden="{{flag}}">
+            <view class="four">
+                <image src="http://chuantu.xyz/t6/731/1588171618x1700468761.png" style="width:210rpx;height:210rpx;"></image>
+                <view class="four-tu">
+                    <image src="http://chuantu.xyz/t6/731/1588171593x1700468761.png" style="width:130rpx;height:130rpx;"></image>
+                </view>
+            </view>
+            <view class="four">
+                <image src="http://chuantu.xyz/t6/731/1588171678x1700468761.png" style="width:210rpx;height:210rpx;"></image>
+                <view class="four-tu">
+                    <image src="http://chuantu.xyz/t6/731/1588171645x1700468761.png" style="width:130rpx;height:130rpx;"></image>
+                </view>
+            </view>
+            <view class="four">
+                <image src="http://chuantu.xyz/t6/731/1588171735x1700468761.png" style="width:210rpx;height:210rpx;"></image>
+                <view class="four-tu">
+                    <image src="http://chuantu.xyz/t6/731/1588171707x1700468761.png" style="width:130rpx;height:130rpx;"></image>
+                </view>
+            </view>
+            <view class="four">
+                <image src="http://chuantu.xyz/t6/731/1588171792x1700468761.png" style="width:210rpx;height:210rpx;"></image>
+                <view class="four-tu">
+                    <image src="http://chuantu.xyz/t6/731/1588171767x1700468761.png" style="width:130rpx;height:130rpx;"></image>
+                </view>
+            </view>
+        </view>
+        <view class="market-book" hidden="{{!flag}}">
+            <view class="refuse_header" wx:for="{{searchRufuse}}" wx:key="index" bind:tap="jumpTrash" data-id="{{item.id}}">
+                <view class="refuse_title">
+                    <span class="name">名称：{{item.name}}</span>
+                    <span class="type">{{refuseType[item.type]}}</span>
+                </view>
+                <!-- <view class="refuse_desc">描述：{{item.refuseDesc || '暂无描述'}}</view> -->
+            </view>
+            <!-- <view class="market-book">
+                <view class="mb-zheng" wx:for="{{searchRufuse}}" wx:key="index">
+                    <navigator class="mz-tu" url="../trash_detail/trash-detail?id={{item.id}}&type={{refuseType[item.type]}}" style="background:url({{item.refusePic}}); background-size:280rpx 370rpx;">
+                        <view class="shu-xinxi">
+                            <view class="sx-money">{{item.name}}11</view>
+                            <view class="sx-ming">{{refuseType[item.type]}}</view>
+                        </view>
+                    </navigator>
+                </view>
+            </view> -->
+            <!-- <view class="market-book">
+                <view class="mb-zheng" wx:for="{{searchRufuse}}" wx:key="index">
+                    <navigator class="mz-tu" url="../goods_detail/goode_detail?id={{item.id}}&userId={{item.userId}}&categoryId={{item.categoryId}}" style="background:url({{item.refusePic}}); background-size:280rpx 370rpx;">
+                        <view class="shu-xinxi">
+                            <view class="sx-money">{{item.name}}11</view>
+                            <view class="sx-ming">{{refuseType[item.type]}}</view>
+                        </view>
+                    </navigator>
+                </view>
+            </view> -->
+        </view>
+    </block>
+</Tab>

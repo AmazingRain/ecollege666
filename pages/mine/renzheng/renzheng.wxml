@@ -1,0 +1,48 @@
+<view class="content">
+    <view class="xinxi">
+        <view class="ming">
+            <view class="m-zi">姓名</view>
+            <input class="m-input" value="{{name}}" bindchange="getName" placeholder="请输入你的姓名"></input>
+        </view>
+        <view class="ming">
+            <view class="m-zi">地址</view>
+            <input class="m-input" value="{{addressDetail}}" bindchange="getAddressDetail" placeholder="请输入你的住址"></input>
+        </view>
+        <view class="ming">
+            <view class="m-zi">电话</view>
+            <input class="m-input" value="{{telphone}}" bindchange="getTelphone" placeholder="请输入你的手机号"></input>
+        </view>
+        <view class="pic">
+            <view class="t-zi">身份证</view>
+            <view class="tu">
+                <view class="tu-con">
+                    <!-- （正） -->
+                    <view class="choice" style="margin-right: 50rpx;" bindtap="selectImg">
+                        <image src="{{frontImg}}" bindtap="preImage" mode="scaleToFill"></image>
+                    </view>
+                </view>
+                <view class="tu-con">
+                    <!-- （反） -->
+                    <view class="choice" bindtap="selectImg1">
+                        <image src="{{backImg}}" bindtap="preImage1" mode="scaleToFill"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <block wx:if="{{authStatus == ''}}">
+        <view class="fabu" bind:tap="submit">
+            <button class="sub" style="width:250rpx;height:100rpx;background-color:#ee2;border-radius:20rpx;">
+                提交
+            </button>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="fabu" bind:tap="submit" >
+            <button class="sub" style="height:100rpx;background-color:#ee2;border-radius:20rpx;" disabled="{{true}}">
+                {{authMsg}}
+            </button>
+        </view>
+    </block>
+    
+</view>

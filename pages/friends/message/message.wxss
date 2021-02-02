@@ -1,0 +1,87 @@
+/* pages/friends/message/message.wxss */
+page {
+  background-color: #E6F4FC;
+}
+.header {
+  width: 676rpx;
+  height: 102rpx;
+  margin: 30rpx auto;
+  background-color: #fff;
+  border-radius: 102rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 5rpx 5rpx 10rpx #666;
+}
+.header .userpic {
+  flex: 1;
+  
+}
+.header .userpic image {
+  /* width: 100%; */
+  width: 94rpx;
+  height: 102rpx;
+  border-radius: 102rpx;
+}
+.header .userNickname {
+  flex: 5;
+  padding-left: 30rpx;
+  color: #707070;
+}
+.header .iconfont {
+  flex: 1;
+  width: 46rpx;
+  height: 46rpx;
+  font-size: 50rpx;
+  /* padding-right: 20rpx; */
+  text-align: left;
+}
+.main {
+  width: 676rpx;
+  margin: 0 auto;
+  
+}
+.item {
+  width: 600rpx;
+  background-color: #fff;
+  border-radius: 102rpx;
+  display: flex;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+}
+.item_right {
+  width: 600rpx;
+  background-color: #fff;
+  border-radius: 102rpx;
+  display: flex;
+  padding: 20rpx;
+  flex-direction: row-reverse;
+  margin-left: 10%;
+  margin-bottom: 30rpx;
+}
+.userpic {
+  flex: 1;
+  margin-right: 10rpx;
+}
+.userpic image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 102rpx;
+}
+
+
+.content {
+  flex: 5;
+  
+}
+.content:nth-child(even) {
+  margin-left: 20rpx;
+}
+.content  .time {
+  color: #666;
+  font-size: 30rpx;
+  margin-bottom: 15rpx;
+}
+.content .text {
+  color: #0099FF;
+  font-size: 35rpx;
+}

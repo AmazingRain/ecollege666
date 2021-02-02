@@ -1,0 +1,13 @@
+<!-- pages/life/trash_detail/trash-detail.wxml -->
+<!-- <text>pages/life/trash_detail/trash-detail.wxml</text> -->
+<view class="header">
+  <view class="text">{{searchResult.name}}</view>
+  <view class="type">{{type}}</view>
+</view>
+<view class="main">
+  <image mode="widthFix" src="{{searchResult.refusePic}}">
+  </image>
+  <view class="item">
+      {{searchResult.refuseDesc}}
+  </view>
+</view>

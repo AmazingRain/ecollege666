@@ -1,0 +1,22 @@
+/* pages/mine/user/forget_password/confimUpdate/confimUpdate.wxss */
+/* pages/mine/user/regist/confim_email/confim_email.wxss */
+.text {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #666;
+}
+.btn {
+  margin: 100rpx 0 0 200rpx;
+  width: 338rpx;
+  height: 100rpx;
+  background-color: #00BFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 30rpx;
+  justify-content: space-around;
+}

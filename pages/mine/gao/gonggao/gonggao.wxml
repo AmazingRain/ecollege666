@@ -1,0 +1,8 @@
+<view class="content">
+    <view class="nav" wx:for="{{gonggao}}" wx:key="index" bindtap="click" data-id="{{item.id}}">
+        <view class="zi">
+            <view class="name">{{item.title}}</view>
+            <view class="time">{{createTime}}</view>
+        </view>
+    </view>
+</view>

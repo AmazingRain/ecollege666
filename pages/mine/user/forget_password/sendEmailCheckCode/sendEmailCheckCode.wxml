@@ -1,0 +1,16 @@
+<!--pages/mine/user/forget_password/sendEmailCheckCode/sendEmailCheckCode.wxml-->
+<!-- <text>pages/mine/user/forget_password/sendEmailCheckCode/sendEmailCheckCode.wxml</text> -->
+<!--pages/users/restPasswordByEmailCheckCode/restPasswordByEmailCheckCode.wxml-->
+<!-- <text>pages/users/restPasswordByEmailCheckCode/restPasswordByEmailCheckCode.wxml</text> -->
+<view class="input_wrap">
+  <view class="input">
+    <input placeholder='请输入验证码' bindchange="getCheckCode" value="{{checkCode}}"></input>
+    <view class="iconfont iconclose_filled" bind:tap="clearValue"></view>
+  </view>
+  <view class="input">
+    <input type="{{inputType}}" placeholder="请输入密码" bindchange="getPassword" value="{{password}}"/>
+      <view class="{{className}}" bind:tap="changeType"></view>
+  </view>
+</view>
+<view class="btn" bind:tap="modify">修改</view>
+

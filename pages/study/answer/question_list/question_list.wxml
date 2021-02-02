@@ -1,0 +1,58 @@
+<block wx:if="{{total!=0}}">
+  <!-- <view class="header">
+    <view class="header_item" style="color:rgb(18,150,219)">
+      <view class="iconfont iconorder_unread"></view>
+      <view class="header_item_text">答题卡</view>
+    </view>
+    <view class="header_item" style="color:rgb(212,35,122)">
+      <view class="iconfont iconbijiben"></view>
+      <view class="header_item_text" bind:tap="errBook">错题本</view>
+    </view>
+  </view> -->
+  <view class="main">
+    <view class="question">{{questions[index].question}}</view>
+    <image class="q-pic" src="{{questions[index].questionPic}}" mode="widthFix" style="width: 300rpx; height: 200rpx"></image>
+    <block wx:if="{{questions[index].type == 2}}">
+      <view class="input-answer">
+        <span>请输入答案：</span>
+        <input type="text" bind:change="checkChooseAnswer" value="{{choose}}" />
+      </view>
+    </block>
+    <block wx:else>
+      <!-- <block wx:for="{{questions[index].options}}" wx:key="index"> -->
+        <!-- <radio-group class="choose-item" bindchange="radioChange">
+          <radio value="{{index}}" bind:tap="getUserChoose" data-choose="{{item.choose}}" checked="{{checkedFlag}}">
+            
+          </radio>
+        </radio-group> -->
+        <radio-group bindchange="radioChange">
+          <label class="choose-item" wx:for="{{questions[index].options}}" wx:key="{{index}}">
+              <radio value="{{item.choose}}" checked="{{checkedFlag}}" />
+              {{item.choose}}. {{item.content}}
+          </label>
+        </radio-group>
+      <!-- </block> -->
+    </block>
+    <view class="submit" wx:if="{{questions[num].type != 1}}" hidden="{{!isHidden}}">
+      <button plain="{{true}}" type="primary" bind:tap="checkChooseAnswer">点击提交</button>
+    </view>
+    <view hidden="{{isHidden}}">
+      <view class="resutl-false">{{isRight}}</view>
+      <view class="real-answer">{{questions[index].aa}}</view>
+      <view class="anlyize">{{questions[index].analysis}}</view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="bottom_nav">
+      <view class="edit" bind:tap="edit" data-choose="{{0}}">
+        <view class="edit_text">上一题</view>
+      </view>
+      <view class="edit" bind:tap="edit" data-choose="{{1}}">
+        <view class="edit_text">下一题</view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="aaa">题库待更新</view>
+</block>

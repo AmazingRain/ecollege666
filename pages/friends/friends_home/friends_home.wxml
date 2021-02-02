@@ -1,0 +1,27 @@
+<!-- pages/friends/friends_home/friends_home.wxml -->
+<!-- <text>pages/friends/friends_home/friends_home.wxml</text> -->
+<view class="nav">
+  <view class="text">消息</view>
+  <div class="input">
+    <view class="iconfont iconsousuo"></view>
+    <input type="text" bindfocus="jumpAddFriends" placeholder="添加/搜索好友" />
+  </div>
+  <view class="image" style="width: 64rpx; height:64rpx;margin-right:10rpx;" bind:tap="jumpFriends">
+    <image src="http://chuantu.xyz/t6/731/1588240556x1700468761.png" mode="widthFix" style="width:100%;" />
+  </view>
+  <view class="iconfont icontianjia" bind:tap="jumpNews"></view>
+</view>
+<view class="main">
+  <block wx:for="{{messages}}" wx:key="index">
+    <block wx:if="{{item != null}}">
+      <view class="item" bind:tap="jumpMessage" data-id="{{item.id}}" data-id1="{{item.nickName}}">
+        <view class="userpic">
+          <image mode="widthFix" src="{{item.userPic}}" />
+        </view>
+        <view class="userNickname">{{item.nickName}}</view>
+        <view class="iconfont iconicon-test6"></view>
+        <span class="text">{{item.content}}</span>
+      </view>
+    </block>
+  </block>
+</view>

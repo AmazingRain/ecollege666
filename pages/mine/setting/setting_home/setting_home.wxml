@@ -1,0 +1,23 @@
+<view class="item" bind:tap="zhanghao">
+    <view class="item_text">账号与安全</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="item" bind:tap="xiaoxi">
+    <view class="item_text">消息与提箱</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="item" bind:tap="yinsi">
+    <view class="item_text">隐私</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="paddingZone"></view>
+<view class="item zone" bind:tap="net">
+    <view class="item_text">网络监测</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="item" bind:tap="huancun">
+    <view class="item_text">清除缓存</view>
+    <view class="iconfont iconicon-test6"></view>
+</view>
+<view class="paddingZone1" ></view>
+<view class="item exit" bind:tap="exit">退出当前账户</view>

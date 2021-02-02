@@ -1,0 +1,75 @@
+/* pages/friends/friends_info/friends_info.wxss */
+page {
+  background-color: #E6F4FC;
+}
+.header {
+  width: 676rpx;
+  height: 102rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 102rpx;
+  box-shadow: 0 7rpx 10rpx #000;
+  display: flex;
+  padding: 0rpx 40rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.header .header_title {
+  color: #666;
+}
+.haeder .incofont {
+  width: 46rpx;
+  height: 46rpx;
+}
+.item {
+  width: 676rpx;
+  height: 102rpx;
+  margin: 30rpx auto;
+  background-color: #fff;
+  border-radius: 102rpx;
+  display: flex;
+  align-items: center;
+}
+.item .userpic {
+  flex: 1;
+  
+}
+.item .userpic image {
+  width: 94rpx;
+  height: 102rpx;
+  border-radius: 102rpx;
+}
+.item .userNickname {
+  flex: 5;
+  padding-left: 30rpx;
+  color: #707070;
+}
+.item .iconfont {
+  flex: 1;
+  width: 46rpx;
+  height: 46rpx;
+  font-size: 50rpx;
+  text-align: left;
+}
+.search{
+  width: 80%;
+  height: 60rpx;
+  background-color: rgba(196, 196, 192, 0.336);
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 35rpx;
+  padding-left: 20rpx; 
+}
+.text {
+  margin-right: 30rpx;
+  color: #666;
+}
+.aaa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300rpx auto;
+  font-size: 50rpx;
+  color:rgb(0,191,255);
+}

@@ -1,0 +1,150 @@
+.content{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.xinxi{
+  width: 100%;
+  padding-bottom: 10rpx;
+  border-bottom: 4rpx solid rgb(243, 239, 239);
+  margin-top: 35rpx;
+}
+
+.ming{
+  width: 100%;
+  height: 100rpx;
+  display: inline-block;
+}
+.m-zi{
+  float: left;
+  width: 100rpx;
+  padding-top:25rpx; 
+  margin-left: 30rpx;
+}
+.m-input{
+  width: 75%;
+  height: 60rpx;
+  background-color:rgba(233, 227, 227, 0.6);  
+  float: left;
+  margin-top: 20rpx;
+  box-shadow: 0 0 10rpx #000;
+  border-radius: 15rpx;
+  padding-left: 20rpx;
+  line-height: 25rpx;
+}
+.pai{
+  width: 100%;
+  height: 100rpx;
+  /* border: 1px solid rgb(6, 143, 161); */
+}
+.p-zi{
+  float: left;
+  width:  75%;
+  padding-top:25rpx; 
+  margin-left: 30rpx;
+}
+
+.intro{
+  width: 100%;
+  height: 220rpx;
+  /* border: 1px solid #ee2; */
+}
+
+
+.pic{
+  width: 100%;
+  /* border: 1px solid #aae; */
+  display: inline-block;
+}
+.t-zi{
+  float: left;
+  width: 100rpx;
+  padding-top:25rpx; 
+  margin-left: 30rpx;
+}
+.tu{
+  float: left;
+}
+.tu-con {
+  display: flex;
+}
+.choice{
+  width: 316rpx;
+  height: 200rpx;
+  border: 1px solid #eee;
+  /* float: left; */
+  margin-top: 10rpx; 
+  margin-right: 15rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 0 10rpx #000;
+  margin-bottom: 20rpx;
+}
+image{
+  border-radius: 15rpx;
+}
+.price{
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 4rpx solid rgb(243, 239, 239);
+}
+.yuanjia{
+  width: 100%;
+  height: 100rpx;
+  /* border: 1px solid #aa2; */
+  display: inline-block;
+}
+.yj-zi{
+  float: left;
+  width: 100rpx;
+  padding-top:25rpx; 
+  margin-left: 30rpx;
+}
+.yj-input{
+  width: 75%;
+  height: 60rpx;
+  background-color:rgba(233, 227, 227, 0.6);  
+  float: left;
+  margin-top: 20rpx;
+  box-shadow: 0 0 10rpx #000;
+  border-radius: 15rpx;
+  padding-left: 20rpx;
+  line-height: 25rpx;
+}
+
+.xianjia{
+  width: 100%;
+  height: 100rpx;
+  /* border: 1px solid #aa2; */
+  display: inline-block;
+}
+.xj-zi{
+  float: left;
+  width: 100rpx;
+  padding-top:25rpx; 
+  margin-left: 30rpx;
+}
+.xj-input{
+  width: 75%;
+  height: 60rpx;
+  background-color:rgba(233, 227, 227, 0.6);  
+  float: left;
+  margin-top: 20rpx;
+  box-shadow: 0 0 10rpx #000;
+  border-radius: 15rpx;
+  padding-left: 20rpx;
+  line-height: 25rpx;
+}
+
+.fabu{
+  width: 100%;
+  height: 200rpx;
+  padding: 0 auto;
+  margin-top: 80rpx;
+}
+
+image {
+  width: 180rpx;
+  height: 180rpx;
+}

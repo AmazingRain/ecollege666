@@ -1,0 +1,104 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.4",
+	"appid": "wx3b727ad7edf49bbf",
+	"projectname": "1.3.0",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/mine/user/userInfo/userInfo",
+					"pathName": "pages/mine/user/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/mine/gao/gao-xinxi/gao-xinxi",
+					"pathName": "pages/mine/gao/gao-xinxi/gao-xinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/study/answer/question_list/question_list",
+					"pathName": "pages/study/answer/question_list/question_list",
+					"query": "id=2",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/friends/friends_home/friends_home",
+					"pathName": "pages/friends/friends_home/friends_home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/user/login_home/login_home",
+					"pathName": "pages/mine/user/login_home/login_home",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

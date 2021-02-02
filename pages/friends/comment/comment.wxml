@@ -1,0 +1,85 @@
+<!-- <view class="content">
+  <view class="wenzi">评论</view>
+  <block wx:for="{{comments}}" wx:key="index">
+    <view class="commet">
+      <view class="more">
+        <view class="touxiang">
+        </view>
+        <view class="username">{{item.nickName}}</view>
+        <view class="pinglun">{{item.content}}</view>
+      </view>
+      <block wx:for="{{replyList[index]}}" wx:for-item="replyListItem" wx:key="index">
+        <view class="username">{{replyListItem.fromNickName}}</view>
+        <view class="huifu">{{replyListItem.content}}</view>
+      </block>
+      <view class="time">2020-04-17</view>
+    </view>
+  </block>
+  <view class="sub">
+    <input class="s-input" bindchange="inputTyping"></input>
+    <button bind:tap="submit" class="but"
+      style="width:110rpx;height:70rpx;background-color:#ee2;border-radius:15rpx; font-size: 30rpx;">
+      发送
+    </button>
+  </view>
+</view> -->
+<view class="main">
+  <block wx:for="{{comments}}" wx:key="index">
+    <view class="item">
+      <view class="userPic">
+        <image src="{{fromIdImgs[index]}}" mode="widthFix"></image>
+      </view>
+      <view class="commentZone">
+        <view class="comment_header">
+          <view class="nickName">{{item.nickName}}</view>
+        </view>
+        <view class="comment_con">
+          <view class="content">
+            <view class="content">{{item.content}}</view>
+            <view class="footer">
+              <view class="time">{{item.createTime}}</view>
+              <view class="icon">
+                <span class="iconfont iconliuyan-copy"></span>
+                <span class="num">{{item.likeNum}}</span>
+                <span class="iconfont iconliuyan-copy"></span>
+                <span class="num">{{item.replyNum}}</span>
+              </view>
+            </view>
+          </view>
+          <block wx:for="{{replyList[index]}}" wx:for-item="replyListItem" wx:key="index2" wx:for-index="index2">
+            <view class="open" hidden="{{isOpen}}" bind:tap="isOpen">
+              <text>展开全部{{index}}</text>
+              <text class="iconfont iconicon-test6"></text>
+            </view>
+            <view class="replyContent" hidden="{{!isOpen}}">
+              <view class="userPic">
+                <image src="{{replyIdImgs[index]}}" mode="widthFix"></image>
+              </view>
+              <view class="commentZone">
+                <view class="comment_header">
+                  <view class="nickName">{{replyListItem.fromNickName}}</view>
+                </view>
+                <view class="comment_con">
+                  <view class="content">
+                    <view class="content">{{replyListItem.content}}</view>
+                    <view class="time">{{replyListItem.createTime}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="close" hidden="{{!isOpen}}" bind:tap="isOpen">
+              <text>收起</text>
+              <text class="iconfont iconicon-test6"></text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="send_wrap">
+  <input class="s-input" bindchange="getCommentValue"></input>
+  <button bind:tap="sendComment" class="btn">
+    发送
+  </button>
+</view>

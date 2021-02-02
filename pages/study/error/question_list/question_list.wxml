@@ -1,0 +1,23 @@
+<block wx:if="{{total != 0}}">
+  <view class="main">
+    <view class="question">问题：{{errList[index].question}}</view>
+    <view class="userAnswer">你的答案：{{errList[index].userAnswer}}</view>
+    <view class="questionAnswer">答案：{{errList[index].answer}}</view>
+    <view class="analyize">解析：{{errList[index].analysis}}</view>
+  </view>
+  <view class="bottom">
+    <view class="bottom_nav">
+      <view class="edit" bind:tap="edit" data-choose="{{0}}">
+        <view class="edit_text">上一题</view>
+      </view>
+      <view class="edit" bind:tap="edit" data-choose="{{1}}">
+        <view class="edit_text">下一题</view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="aaa">
+    暂时没有错题
+  </view>
+</block>

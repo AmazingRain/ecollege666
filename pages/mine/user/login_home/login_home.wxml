@@ -1,0 +1,35 @@
+<!--pages/mine/user/login_home/login_home.wxml-->
+<!-- <text>pages/mine/user/login_home/login_home.wxml</text> -->
+<!--pages/logins/login/login.wxml-->
+<view class="login">
+  <view class="login_img">
+    <image src="http://chuantu.xyz/t6/731/1588155615x1700468761.png" mode="widthFix"/>
+    <text>校园</text>
+  </view>
+</view>
+<view class="input_wrap">
+  <view class="input">
+    <input placeholder='请输入用户名' bindinput="getUserName" value="{{username}}"></input>
+    <view class="iconfont iconclose_filled" bind:tap="clearValue"></view>
+  </view>
+  <view class="input">
+    <input type="{{inputType}}" placeholder="请输入密码" bindinput="getPassword" value="{{password}}"/>
+      <view class="{{className}}" bind:tap="changeType"></view>
+  </view>
+</view>
+<view class="regist">
+  <view bind:tap="regist">注册</view>
+  <view bind:tap="findPassword">忘记密码</view>
+</view>
+<view class="enter" bind:tap="loginPage">
+  <text class="iconfont iconicon-test7-copy"></text>
+</view>
+<view class="qita_text" >
+  <text >  其它登录方式 </text>
+</view>
+<view class="qita_icon">
+  <view class="iconfont iconweixin-copy" bind:tap="disagree"></view>
+  <view class="iconfont iconqq" bind:tap="disagree"></view>
+  <view class="iconfont iconweibo" bind:tap="disagree"></view>
+</view>
+

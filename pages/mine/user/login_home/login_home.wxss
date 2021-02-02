@@ -1,0 +1,119 @@
+/* pages/logins/login/login.wxss */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200rpx;
+  color: #4EACEC;
+  margin-bottom: 50rpx;
+  margin-top: 50rpx;
+}
+.login .login_img {
+  padding-top: 30rpx;
+  font-size: 60rpx;
+  font-weight: 500;
+  letter-spacing: 20rpx;
+  font-weight: 500;
+}
+.login .login_img image {
+  width: 60rpx;
+  height: 15rpx;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 30rpx;
+}
+.login .login_text {
+  font-size: 60rpx;
+  font-weight: 900;
+  padding-top: 30rpx;
+}
+
+.input {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border: 4rpx solid #4EACEC;
+  border-radius: 50rpx;
+  margin-bottom: 40rpx;
+  background-color: #EFEFEF;
+}
+.input input{
+  flex: 4;
+  height: 100rpx;
+  padding-left: 40rpx;
+  font-size: 38rpx;
+}
+.input .iconfont {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: #707070;
+  font-size: 50rpx;
+}
+.regist {
+  padding: 0 10rpx;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #4DABEC;
+  font-size: 32rpx;
+  letter-spacing: 8rpx;
+}
+.enter {
+  text-align: center;
+  margin: 20rpx 0 0 300rpx;
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  background-color: #4DABEC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6rpx 6rpx 10rpx #4DABEC;
+}
+
+.enter .iconfont {
+  color: #ffffff;
+  font-size: 70rpx;
+}
+.bottom_img {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700rpx;
+  height: 355rpx;
+  margin-bottom: 60rpx;
+}
+.bottom_img image {
+  width: 70%;
+}
+.qita_text {
+  width: 70%;
+  margin: 50rpx auto 0;
+  color: #666666;
+  text-align: center;
+}
+.qita_icon {
+  width: 70%;
+  margin: 50rpx auto 0;
+  display: flex;
+}
+.qita_icon .iconfont{
+  flex: 1;
+  text-align: center;
+  font-size: 67rpx;
+}
+.qita_icon .iconfont:nth-child(1) {
+  color: #20EF46;
+}
+.qita_icon .iconfont:nth-child(2) {
+  color: #1296DB;
+}
+.qita_icon .iconfont:nth-child(3) {
+  color: #F0B8C5;
+}

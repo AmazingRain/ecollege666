@@ -1,0 +1,8 @@
+<view class="header">
+  <view class="text">{{nei.title}}</view>
+</view>
+<view class="main">
+  <view class="item">
+      {{nei.content}}
+  </view>
+</view>

@@ -1,0 +1,97 @@
+<!--pages/study/study_home/study_home.wxml-->
+<view class="marquee_container" style="--marqueeWidth--:-12em" hidden="{{flag}}">
+    <view class="marquee_text">{{content}}</view>
+</view>
+<view class="nav">
+  <view class="left_con">
+    <view class="schoollogo">
+      <image mode="widthFix" src="http://chuantu.xyz/t6/731/1588155763x1700468761.png" />
+      <text>西安邮电大学</text>
+    </view>
+    <view class="menu_top">
+      <view class="menu_list" bind:tap="jumpAnwer">
+        <view class="iconfont iconlianxi_"></view>
+        <view>练习</view>
+      </view>
+      <view class="menu_list" bind:tap="jumpError">
+        <view class="iconfont iconbijiben"></view>
+        <view>错题本</view>
+      </view>
+      <view class="menu_list" bind:tap="chaxun">
+        <view class="iconfont iconchaxun"></view>
+        <view>查询</view>
+      </view>
+    </view>
+  </view>
+  <view class="right_con">
+    <image mode="widthFix" src="http://chuantu.xyz/t6/731/1588155814x1700468761.png" />
+  </view>
+</view>
+<view class="menu_bottom">
+  <view class="menu_list" bind:tap="jumpRank">
+    <view class="iconfont iconpaihang" style="color: rgb(164,87,157)"></view>
+    <view>排行</view>
+  </view>
+   <view class="menu_list" bind:tap="chaxun">
+    <view class="iconfont icongengduo1" style="color:rgb(18,150,219)"></view>
+    <view>更多</view>
+  </view>
+  <view class="menu_list">
+   
+  </view>
+  <view class="menu_list">
+   
+  </view>
+ 
+  <view class="menu_list"></view>
+</view>
+<view class="menu_wrap">
+  <view class="menu_wrap_list" bind:tap="jumpAnwer">
+    <view class="clickZone" data-num="{{1}}">
+      <view class="left_title">
+        <text class="iconfont iconiconfont_huixingzhen" style="color:rgb(26,159,226);"></text>
+        <text class="text">练习</text>
+      </view>
+      <view class="right_choose">
+        <text class="{{fontClass1}}" style="color:rgb(26,159,226);"></text>
+      </view>
+    </view>
+    <view class="hiddenZone" style="{{showFlag1}}">隐藏内容</view>
+  </view>
+  <view class="menu_wrap_list" bind:tap="jumpError">
+    <view class="clickZone"  data-num="{{2}}">
+      <view class="left_title">
+        <text class="iconfont iconiconfont_huixingzhen" style="color:rgb(215,51,132);"></text>
+        <text class="text">错题本</text>
+      </view>
+      <view class="right_choose">
+        <text class="{{fontClass2}}" style="color:rgb(215,51,132);"></text>
+      </view>
+    </view>
+    <view class="hiddenZone" style="{{showFlag2}}">隐藏内容</view>
+  </view>
+  <view class="menu_wrap_list" bind:tap="jumpRank">
+    <view class="clickZone"  data-num="{{3}}">
+      <view class="left_title">
+        <text class="iconfont iconiconfont_huixingzhen" style="color:rgb(26,250,41);"></text>
+        <text class="text">排行</text>
+      </view>
+      <view class="right_choose">
+        <text class="{{fontClass3}}" style="color:rgb(26,250,41);"></text>
+      </view>
+    </view>
+    <view class="hiddenZone" style="{{showFlag3}}">隐藏内容</view>
+  </view>
+  <view class="menu_wrap_list" bind:tap="chaxun">
+    <view class="clickZone"  data-num="{{4}}">
+      <view class="left_title">
+        <text class="iconfont iconiconfont_huixingzhen" style="color:rgb(166,91,159);"></text>
+        <text class="text">更多</text>
+      </view>
+      <view class="right_choose">
+        <text class="{{fontClass4}}" style="color:rgb(166,91,159);"></text>
+      </view>
+    </view>
+    <view class="hiddenZone" style="{{showFlag4}}">隐藏内容</view>
+  </view>
+</view>

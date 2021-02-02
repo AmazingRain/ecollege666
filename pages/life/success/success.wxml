@@ -1,0 +1,7 @@
+<view class="content">
+    <view class="picture">
+        <text class="iconfont iconzhengque" style="font-size:250rpx;color:#ee2"></text>
+    </view>
+    <view class="wenzi">发布成功！</view>
+    <view class="xiang" bindtap="go">查看详情</view>
+</view>

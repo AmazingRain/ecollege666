@@ -1,0 +1,26 @@
+<!-- pages/friends/message/message.wxml -->
+<!-- <text>pages/friends/message/message.wxml</text> -->
+<view class="header">
+  <view class="userpic">
+    <image mode="widthFix" src="http://localhost:3000/img/touxiang.jpg" />
+  </view>
+  <view class="userNickname">item.nickName{{item.id}}</view>
+  <view class="iconfont iconfenlei"></view>
+</view>
+<view class="main">
+  <block wx:for="{{messages}}" wx:key="index">
+    <view class="{{item.class}}">
+      <view class="userpic">
+        <image mode="widthFix" src="{{item.userPic}}" />
+      </view>
+      <view class="content">
+        <view class="time">{{item.createTime}}</view>
+        <view class="text">{{item.content}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="input">
+  <!-- <input type="text"/>
+  <button bind:tap="sendMessage">发送</button> -->
+</view>

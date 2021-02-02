@@ -1,0 +1,47 @@
+<view class="info">
+  <view class="title">基础信息</view>
+  <view class="userPic_wrap" bind:tap="choosePhoto">
+    <view class="des">头像</view>
+    <view class="userPic">
+      <image src="{{userInfo.userPic}}" mode="widthFix" />
+    </view>
+  </view>
+  <view class="item_wrap">
+    <view class="item_list">
+      <view class="item_title">昵称</view>
+      <input type="text" value="{{userInfo.nickName}}" bindchange="getUserName" />
+    </view>
+    <view class="item_list">
+      <view class="item_text">性别</view>
+      <picker bindchange="getGender" value="{{userInfo.sex || genders[index]}}" range="{{genders}}">
+        <view class="picker">{{genders[index]}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="item">
+    <view class="des">生日</view>
+    <picker mode="date" value="{{date || '2000-01-01'}}" start="1950-09-01" end="2050-09-01" bindchange="getDate">
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+  <view class="school">
+    <view class="s-des">学校</view>
+    <view class="s-main" >
+      <input type="text" value="{{schoolName}}" bindinput="getSchoolName"/>
+      <view class="hidden" hidden="{{hiddenFlag}}" bind:blur="hiddenSearch">
+        <block wx:for="{{searchResult}}">
+           <view class="s-item" bind:tap="confirmSchoolName" data-name="{{item.id}}">{{item.deptName}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="item" >
+    <view class="des">邮箱</view>
+    <input class="picker" value="{{userInfo.email}}" disabled style="background-color:#DBDBDC;"/>
+  </view>
+  <view class="item">
+    <view class="des">手机</view>
+    <input class="picker" value="{{userInfo.phone || '暂无'}}" />
+  </view>
+</view>
+<view class="btn" bind:tap="submit">保存</view>

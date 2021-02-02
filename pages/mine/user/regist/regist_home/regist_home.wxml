@@ -1,0 +1,25 @@
+<view class="main">
+  <view class="item">
+    <view class="item_text">请输入用户名</view>
+    <view class="input">
+      <!-- <input type="text" placeholder="请输入用户名" value="{{userName}}"  bindinput="getUserName" data-user="userName"/> -->
+      <input placeholder='请输入用户名' bindchange="getUserName" value="{{userName}}"></input>
+      <view class="iconfont iconclose_filled" bind:tap="clearValue"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="item_text">输入新密码</view>
+    <view class="input">
+      <input type="{{inputType[0]}}" placeholder="请输入密码" bindchange="getPassword" value="{{password}}"/>
+      <view class="{{className[0]}}" bind:tap="changeType" data-type="pwd"></view>
+    </view>
+  </view>
+   <view class="item">
+    <view class="item_text">确认密码</view>
+    <view class="input">
+      <input type="{{inputType[1]}}" placeholder="请再次输入密码" bindchange="getRePassword"  value="{{rePassword}}"/>
+      <view class="{{className[1]}}" bind:tap="changeType" data-type="repwd"></view>
+    </view>
+  </view>
+  <view class="btn" bind:tap="checkPassword">下一步</view>
+</view>

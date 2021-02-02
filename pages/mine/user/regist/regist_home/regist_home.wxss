@@ -1,0 +1,56 @@
+/* pages/users/regist/regist.wxss */
+.main {
+  width: 100%;
+  margin-top: 120rpx;
+}
+.item {
+  margin-bottom: 50rpx;
+}
+.item .item_text {
+  width: 70%;
+  margin: 0 auto 40rpx;
+  color: #666666;
+  font-size: 34rpx;
+}
+.input {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border: 4rpx solid #4EACEC;
+  border-radius: 50rpx;
+  margin-bottom: 40rpx;
+  background-color: #EFEFEF;
+}
+.input input{
+  flex: 4;
+  height: 100rpx;
+ 
+  
+  /* text-indent: 10rpx; */
+  padding-left: 40rpx;
+  font-size: 38rpx;
+}
+.input .iconfont {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  /* position: absolute;
+  top: 30rpx;
+  right: 40rpx; */
+  /* margin-top: 30rpx; */
+  color: #707070;
+  font-size: 50rpx;
+}
+.btn {
+  margin: 100rpx 0 0 200rpx;
+  width: 338rpx;
+  height: 100rpx;
+  background-color: #00BFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 30rpx;
+  justify-content: space-around;
+}

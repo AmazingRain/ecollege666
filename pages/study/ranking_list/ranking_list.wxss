@@ -1,0 +1,88 @@
+/* pages/study/ranking_list/ranking_list.wxss */
+page {
+  background-color: #ECDBF3;
+}
+.top_img {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.top_img image {
+  width: 860rpx;
+  height: 536rpx;
+}
+.nickName {
+  padding-left: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rank_wrap {
+  width: 90%;
+  /* height: 500rpx; */
+  margin: 20rpx auto 0;
+  background-color: #BF88D6;
+  padding: 20rpx 0;
+  border-radius: 20rpx;
+}
+.rank_title {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ECDBF3;
+  display: flex;
+  height: 60rpx;
+  border-radius: 20rpx;
+}
+.rank_title .title_col {
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+}
+.rank_con {
+  width: 90%;
+  margin: 20rpx auto 0;
+  background-color: #FFF;
+  display: flex;
+  height: 60rpx;
+  border-radius: 20rpx;
+}
+.rank_con .con_col {
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+  color: #666666;
+}
+.rank_con  .iconfont {
+  width: 50rpx;
+  height: 50rpx;
+}
+.rank_con  .iconlevel1 {
+  color: #F4EA2A;
+}
+.rank_con .iconlevel2 {
+  color: #BFBFBF;
+}
+.rank_con .iconlevel3 {
+  color: #C48A10;
+}
+.self_rank {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: #ECDBF3;
+}
+
+.self_rank .rank_con {
+  background-color: #BF88D6;
+  display: flex;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+.self_rank .rank_con .con_col {
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}

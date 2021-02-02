@@ -1,0 +1,24 @@
+/* pages/mine/setting/zhanghao/zhanghao.wxss */
+.item {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+  border-bottom: 3rpx solid #A7A2A2;
+  font-size: 38rpx;
+  color: #706969;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.zone {
+  /* margin-top: 30rpx; */
+  border-top: 3rpx solid #A7A2A2;
+}
+.item .item_text {
+  padding-left: 30rpx;
+  flex: 5;
+}
+.item .iconfont {
+  flex: 1;
+  font-size: 50rpx;
+}

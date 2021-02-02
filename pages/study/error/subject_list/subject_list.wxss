@@ -1,0 +1,64 @@
+/* pages/study/answer/subject_list/subject_list.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #ECE3EB;
+}
+.nav_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(19,123,235);
+  padding: 30rpx 0 20rpx;
+  font-size: 40rpx;
+  letter-spacing: 5rpx;
+}
+.menu {
+  padding-top: 40rpx;
+}
+.menu .menu_list {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  width: 706rpx;
+  height: 362rpx;
+  margin: 0 auto 40rpx;
+}
+
+.menu .menu_list .img_wrap {
+  flex: 1;
+  margin-right: 20rpx;
+}
+.menu .menu_list .img_wrap image {
+  width: 220rpx
+}
+
+.menu .menu_list .description {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu .menu_list .description .text {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu_list .description .text .books_title {
+  font-weight: 700;
+  font-size: 34rpx;
+  padding-bottom: 20rpx;
+  color: rgb(121,121,121);
+}
+.menu .menu_list .description .text .exit {
+  font-size: 26rpx;
+  color: rgb(180,180,180);
+}
+.menu .menu_list .description .lock {
+  color: rgb(19,123,235);
+  margin-bottom: 20rpx;
+}
+.menu .menu_list .description .lock .iconfont {
+  padding-right: 10rpx;
+}

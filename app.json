@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/study/study_home/study_home",
+    "pages/study/answer/subject_list/subject_list",
+    "pages/study/answer/question_list/question_list",
+    "pages/life/life_home/life_home",
+    "pages/mine/mine_home/mine_home",
+    "pages/mine/user/login_home/login_home",
+    "pages/mine/user/regist/regist_home/regist_home",
+    "pages/mine/user/regist/bind_email/bind_email",
+    "pages/mine/user/regist/confim_email/confim_email",
+    "pages/mine/user/forget_password/forget_password_home/forget_password_home",
+    "pages/mine/user/forget_password/sendEmailCheckCode/sendEmailCheckCode",
+    "pages/mine/setting/setting_home/setting_home",
+    "pages/mine/setting/xiaoxi/xiaoxi",
+    "pages/mine/setting/yinsi/yinsi",
+    "pages/mine/setting/net/net",
+    "pages/mine/setting/zhanghao/zhanghao",
+    "pages/mine/more/more_home/more_home",
+    "pages/mine/more/fuwu/fuwu",
+    "pages/mine/more/guanyu/guanyu",
+    "pages/mine/more/help/help",
+    "pages/mine/user/userInfo/userInfo",
+    "pages/study/error/question_list/question_list",
+    "pages/study/error/subject_list/subject_list",
+    "pages/study/ranking_list/ranking_list",
+    "pages/friends/friends_home/friends_home",
+    "pages/friends/friends_info/friends_info",
+    "pages/friends/message/message",
+    "pages/friends/comment/comment",
+    "pages/life/goods_detail/goode_detail",
+    "pages/life/success/success",
+    "pages/life/submit/submit",
+    "pages/mine/renzheng/renzheng",
+    "pages/friends/addFriends/addFriends",
+    "pages/friends/newFriend/newFriend",
+    "pages/mine/user/forget_password/confimUpdate/confimUpdate",
+    "pages/mine/gonggao/gonggao",
+    "pages/mine/gao/gao-xinxi/gao-xinxi",
+    "pages/mine/gao/gonggao/gonggao",
+    "pages/life/trash_detail/trash-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296DB",
+    "navigationBarTitleText": "易校园",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#E7E7E7",
+    "selectedColor": "#1296DB",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/study/study_home/study_home",
+        "text": "学习",
+        "iconPath": "/assets/img/tabbar/study.png",
+        "selectedIconPath": "/assets/img/tabbar/study_active.png"
+      },
+      {
+        "pagePath": "pages/life/life_home/life_home",
+        "text": "生活",
+        "iconPath": "/assets/img/tabbar/life.png",
+        "selectedIconPath": "/assets/img/tabbar/life_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine_home/mine_home",
+        "text": "我的",
+        "iconPath": "/assets/img/tabbar/mine.png",
+        "selectedIconPath": "/assets/img/tabbar/mine_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

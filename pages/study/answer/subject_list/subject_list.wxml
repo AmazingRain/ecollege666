@@ -1,0 +1,19 @@
+<!--pages/study/answer/subject_list/subject_list.wxml-->
+<!-- <text>pages/study/answer/subject_list/subject_list.wxml</text> -->
+<view class="menu">
+  <view class="menu_list" bind:tap="skip" data-id="{{item.id}}" wx:for="{{courses}}" wx:key="id">
+    <view class="img_wrap">
+      <image mode="widthFix" src="{{item.picUrl}}" />
+    </view>
+    <view class="description">
+      <view class="text">
+        <text class="books_title">{{item.name}}</text>
+        <!-- <text class="exit">机械工业出版社</text> -->
+      </view>
+      <view class="lock">
+        <text class="iconfont iconweisuo-copy"></text>
+        <text class="lock_text">已开放</text>
+      </view>
+    </view>
+  </view>
+</view>

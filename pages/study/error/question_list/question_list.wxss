@@ -1,0 +1,64 @@
+page {
+  /* background-color: #ECE3EB; */
+}
+.main {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 40rpx;
+  font-family: '黑体';
+}
+.main .question {
+  color: #666;
+  padding: 20rpx 0 20rpx 0;
+}
+.userAnswer, .analyize, .questionAnswer {
+  color: #147BEB;
+  margin-bottom: 20rpx;
+}
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  background-color:#F5F5F5;
+}
+.bottom_nav {
+  display: flex;
+}
+.bottom .edit {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+}
+.bottom .edit .edit_text {
+  width: 80%;
+  background-color: rgb(0,191,255);
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 20rpx;
+}
+.bottom .total {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bottom .options {
+  width: 100%;
+  display: flex;
+}
+.aaa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300rpx auto;
+  font-size: 50rpx;
+  color:rgb(0,191,255);
+}

@@ -1,0 +1,12 @@
+<view class="text">
+  <text>
+  <text style="color:red;font-weight:700;">
+    请注意查收的你的邮件，并按邮件的信息完成邮箱绑定操作
+  </text>
+    
+  （tips：邮箱是找回密码的唯一凭证）
+  <text style="color:red;font-weight:700;">如果接收不到，请在垃圾邮箱里面查看），并按邮件的信息完成邮箱绑定操作</text>
+  
+  </text>
+</view>
+<view class="btn" bind:tap="backLogin">返回登录界面</view>

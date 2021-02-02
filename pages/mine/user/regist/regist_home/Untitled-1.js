@@ -1,0 +1,4 @@
+let data = `{"status":200,"msg":"OK","data":{"id":null,"username":"1111111","password":"$2a$10$OMLQS31lqcl.aIbE53825exbaFIrV997198A7oMH5dv4KEcYftiNC","userPic":null,"nickName":null,"schoolId":null,"deptId":null,"majorId":null,"classId":null,"snum":null,"email":null,"phone":null,"qq":null,"vx":null,"level":1,"exp":0,"sex":null,"age":null,"birthday":null,"zodiac":null,"constellation":null,"sign":null,"userDesc":null,"status":"1","createTime":"2020-05-02T13:21:16.393+0000","roleList":null}}{"timestamp":"2020-05-02T13:21:16.504+0000","status":200,"error":"OK","message":"getOutputStream() has already been called for this response","path":"/user/add"}`
+let str = data.split('}{')
+// console.log(str);
+console.log(str[0] + '}')
